@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>commentboard</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+
+      <link rel="stylesheet" type="text/css" href="/stylesheet.css" />
+    </head>
+
+  <body>
+    <div class="container">
+      <h1>
+        <a href="/">rate everything usc</a>
+      </h1>
+
+      <hr/>
+
+      <div class="tips">
+        <div class="tip">
+          <p class="content">
+            <b><%= tip.author %><br/></b>
+          </p>
+
+          <p class="details">
+            
+               <%= tip.content %>
+            <br/>
+
+            <a  class="permalink">            
+              <%= moment(tip.created).format('MMMM DD, hh:mm a') %>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <hr/>
+
+<!--      <form method="POST" action="/tip/new/new">
+        <input type="text" placeholder="Topic of your comment, for example: a class/professor/dorm..." class="text-input name-input" name="author"/>
+        <textarea class="text-input content-input" placeholder="Type your subcomment" name="content"></textarea>
+        
+        <div class="submit-input">
+          <input type="submit" class="submit-btn"/>
+        </div>
+
+       <% if (locals.errors) { %>
+          <div class="error">
+            <% for(var i = 0;i < errors.length; i++) { %>
+              <p><%= errors[i] %></p>
+            <% } %>
+          </div>
+        <% } %> -->
+      </form>      
+    </div>
+  </body>
+</html>
