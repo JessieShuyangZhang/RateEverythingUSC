@@ -1,3 +1,3 @@
-# Troy Tips Skeleton
+# Rate Everything USC
 
-This is the skeleton version of Troy Tips. This is NOT complete. To finish this, follow the root README.
+A web app where you can post and view comments on everything about USC.
